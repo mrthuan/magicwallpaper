@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Brokenscreen</string>
+    <string name="text_ads_shown">Ads are about to be shown…</string>
 </resources>

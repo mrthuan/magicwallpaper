@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="_12ssp">12.0sp</dimen>
+    <dimen name="_36sdp">36.0dip</dimen>
+    <dimen name="_48sdp">48.0dip</dimen>
+</resources>
