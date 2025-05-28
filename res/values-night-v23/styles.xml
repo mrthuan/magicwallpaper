@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StatusColorApp" parent="@style/Theme.BaseTemplate">
+        <item name="android:statusBarColor">@color/color_icon</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.StatusWhite" parent="@style/Theme.BaseTemplate">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

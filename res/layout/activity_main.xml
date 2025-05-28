@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_main_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.module.config.views.commons.GradientTextView android:textSize="@dimen/_18ssp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Broken Screen" android:fontFamily="@font/inter_bold" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center" android:id="@id/switchButtonMain" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/ic_switch" android:thumb="@null" android:track="@null" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fr_main_home" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/_5sdp" app:layout_constraintBottom_toTopOf="@id/ll_bottom_navigation" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom_navigation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/rl_bottom" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fr_main_home">
+        <View android:background="#ffa294a3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_55sdp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_nav_wallpaper" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_wallpaper" android:padding="@dimen/_3sdp" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                <com.module.config.views.commons.GradientTextView android:textSize="@dimen/_10ssp" android:textColor="#ffa294a3" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_wallpaper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxWidth="@dimen/_70sdp" android:text="@string/wallpaper" android:lines="1" android:fontFamily="@font/inter_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_broken_screen" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_broken_screen" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                <com.module.config.views.commons.GradientTextView android:textSize="@dimen/_10ssp" android:textColor="#ffa294a3" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_broken_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxWidth="@dimen/_70sdp" android:text="@string/broken_screen" android:lines="1" android:fontFamily="@font/inter_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_prank" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_prank" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                <com.module.config.views.commons.GradientTextView android:textSize="@dimen/_10ssp" android:textColor="#ffa294a3" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_prank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxWidth="@dimen/_70sdp" android:text="@string/prank" android:lines="1" android:fontFamily="@font/inter_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_setting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_setting" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                <com.module.config.views.commons.GradientTextView android:textSize="@dimen/_10ssp" android:textColor="#ffa294a3" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxWidth="@dimen/_70sdp" android:text="@string/settings" android:lines="1" android:fontFamily="@font/inter_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:id="@id/fr_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/_58sdp" android:layout_centerInParent="true" />
+        <LinearLayout android:id="@id/ln_banner" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerVertical="true">
+            <include layout="@layout/layout_banner_control" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/fr_native" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <include android:id="@id/shimmer_ads" layout="@layout/shimmer_native_small" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

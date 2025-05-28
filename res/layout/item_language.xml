@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_root" android:tag="layout/item_language_0" android:background="@drawable/bg_button_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12sdp" android:layout_marginEnd="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_8sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_language" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_language_croatia" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/_10ssp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_language" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_6sdp" android:layout_marginRight="@dimen/_6sdp" android:text="@string/app_name" android:lines="1" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_toStartOf="@id/iv_done" android:layout_toEndOf="@id/iv_language" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_done" android:visibility="visible" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_language_non_select" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

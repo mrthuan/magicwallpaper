@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_on_board_0" android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:layout_above="@id/rl_bottom" android:animateLayoutChanges="true">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_on_boarding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_button" />
+        <RelativeLayout android:id="@id/rl_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/_12sdp">
+            <me.relex.circleindicator.CircleIndicator3 android:id="@id/circle_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:ci_drawable="@drawable/circle_indicator_selected" app:ci_drawable_unselected="@drawable/circle_indicator" app:ci_height="6.0dip" app:ci_margin="6.0dip" app:ci_width="6.0dip" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_next" android:paddingTop="@dimen/_8sdp" android:paddingBottom="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:layout_centerVertical="true" android:paddingStart="@dimen/_24sdp" android:paddingEnd="@dimen/_24sdp" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/_8sdp" style="@style/TextViewRegular" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lav_swipe" android:layout_width="@dimen/_68sdp" android:layout_height="@dimen/_48sdp" android:layout_margin="@dimen/_12sdp" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/ic_hand_swipe" />
+        <FrameLayout android:orientation="vertical" android:id="@id/fr_native" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/shimmer_ads" layout="@layout/shimmer_native_large" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

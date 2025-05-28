@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/activity_favourite_wallpaper_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_back" android:src="@drawable/ic_back" style="@style/IconToolbar" />
+        <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/tv_favourite_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favourite_wallpaper" android:fontFamily="@font/inter_regular" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_favourite_wallpaper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_10sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_favourite_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_100sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_toolbar">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_no_wallpaper" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_100sdp" android:src="@drawable/ic_img_no_wallpaper" />
+        <TextView android:textSize="@dimen/_13ssp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_wallpaper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/explore_more_wallpaper" android:fontFamily="@font/inter_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_no_wallpaper" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

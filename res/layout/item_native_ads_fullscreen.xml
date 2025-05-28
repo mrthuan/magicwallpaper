@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_native_ads_fullscreen_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fr_native" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/shimmer_ads" layout="@layout/shimmer_native_fullscreen" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_close" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:layout_marginTop="@dimen/_12sdp" android:src="@drawable/ic_close" android:layout_marginEnd="@dimen/_12sdp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

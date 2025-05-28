@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_exit_app_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/gl_horizontal_60" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.6" />
+    <TextView android:textSize="@dimen/_28ssp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12sdp" android:text="Thank You !" app:layout_constraintBottom_toTopOf="@id/iv_thank" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/TextViewBold" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_thank" android:layout_width="@dimen/_200sdp" android:layout_height="@dimen/_200sdp" android:src="@drawable/img_thank" app:layout_constraintBottom_toTopOf="@id/gl_horizontal_60" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginHorizontal="@dimen/_12sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_thank">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/_36sdp" android:layout_height="@dimen/_36sdp" android:src="@drawable/ic_iu" />
+        <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thanks for using my app.\nSee you soon." android:layout_marginStart="@dimen/_12sdp" style="@style/TextViewBold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

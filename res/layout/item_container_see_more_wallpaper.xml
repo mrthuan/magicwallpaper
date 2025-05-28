@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:id="@id/rl_root" android:tag="layout/item_container_see_more_wallpaper_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_7sdp" android:layout_marginEnd="@dimen/_7sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_item_wallpaper" android:layout_width="fill_parent" android:layout_height="@dimen/_150sdp" app:cardCornerRadius="@dimen/_8sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_item_wallpaper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

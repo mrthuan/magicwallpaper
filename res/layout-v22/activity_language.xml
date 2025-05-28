@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_language_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_back" android:src="@drawable/ic_back" style="@style/IconToolbar" />
+        <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_language" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_12sdp" android:layout_toEndOf="@id/iv_back" />
+        <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_ok" android:background="@drawable/bg_btn_fill_24" android:paddingLeft="@dimen/_24sdp" android:paddingTop="@dimen/_8sdp" android:paddingRight="@dimen/_24sdp" android:paddingBottom="@dimen/_8sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_ok" android:layout_centerVertical="true" android:fontFamily="@font/poppins_regular" android:layout_marginEnd="@dimen/_12sdp" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/_24sdp" android:paddingVertical="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_done" android:visibility="gone" android:src="@drawable/ic_language_done" android:tint="@color/black" android:layout_alignParentEnd="true" style="@style/IconToolbar" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingTop="@dimen/_4sdp" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_2sdp" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintBottom_toTopOf="@id/fr_native" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_language" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/fr_native" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <include android:id="@id/shimmer_ads" layout="@layout/shimmer_native_large" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

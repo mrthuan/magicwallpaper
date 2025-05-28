@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_broken_screen_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_bt_broken_screen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_broken_screen" android:layout_width="fill_parent" android:layout_height="@dimen/_130sdp" android:maxWidth="@dimen/_316sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_40sdp" android:text="@string/broken_screen" android:layout_marginStart="@dimen/_25sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fr_native" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                <include android:id="@id/shimmer_ads" layout="@layout/shimmer_native_medium" />
+            </FrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_electric_maigc" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_electric_magic" android:layout_width="fill_parent" android:layout_height="@dimen/_130sdp" android:maxWidth="@dimen/_316sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_40sdp" android:text="@string/electric_magic" android:layout_marginStart="@dimen/_25sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_bt_destroy_screen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_destroy_screen" android:layout_width="fill_parent" android:layout_height="@dimen/_130sdp" android:maxWidth="@dimen/_316sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_40sdp" android:text="@string/destroy_screen" android:layout_marginStart="@dimen/_25sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

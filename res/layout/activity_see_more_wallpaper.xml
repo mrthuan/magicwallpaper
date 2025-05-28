@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/activity_see_more_wallpaper_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_back" android:src="@drawable/ic_back" style="@style/IconToolbar" />
+        <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/tv_see_more_wallpaper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Broken" android:fontFamily="@font/inter_regular" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_wallpaper" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_10sdp" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_8sdp" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_toolbar" app:spanCount="3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

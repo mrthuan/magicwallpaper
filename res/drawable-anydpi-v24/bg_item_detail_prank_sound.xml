@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="197.0dip" android:width="197.0dip" android:viewportWidth="197.0" android:viewportHeight="197.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#26000000" android:pathData="M0 26.86c0-7.12 2.83-13.96 7.87-18.99 5.04-5.04 11.87-7.87 18.99-7.87h143.28c7.12 0 13.96 2.83 18.99 7.87 5.04 5.04 7.87 11.87 7.87 18.99v143.28c0 7.12-2.83 13.96-7.87 18.99-5.04 5.04-11.87 7.87-18.99 7.87h-143.28c-7.12 0-13.96-2.83-18.99-7.87-5.04-5.04-7.87-11.87-7.87-18.99z" />
+    <path android:fillColor="@drawable/$bg_item_detail_prank_sound__0" android:pathData="M0 151.78h197v18.36c0 14.83-12.03 26.86-26.86 26.86H26.86C12.03 197 0 184.97 0 170.14v-18.36Z" />
+</vector>

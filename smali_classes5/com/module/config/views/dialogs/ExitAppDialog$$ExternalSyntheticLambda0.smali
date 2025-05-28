@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/module/config/views/dialogs/ExitAppDialog$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/module/config/views/dialogs/ExitAppDialog;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/module/config/views/dialogs/ExitAppDialog;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/module/config/views/dialogs/ExitAppDialog$$ExternalSyntheticLambda0;->f$0:Lcom/module/config/views/dialogs/ExitAppDialog;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/module/config/views/dialogs/ExitAppDialog$$ExternalSyntheticLambda0;->f$0:Lcom/module/config/views/dialogs/ExitAppDialog;
+
+    invoke-static {v0, p1}, Lcom/module/config/views/dialogs/ExitAppDialog;->$r8$lambda$9L7ldloYONfvG1Bd1Zl3CtpV4EE(Lcom/module/config/views/dialogs/ExitAppDialog;Landroid/view/View;)V
+
+    return-void
+.end method

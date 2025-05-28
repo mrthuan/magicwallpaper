@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/layoutDetailRcv" android:tag="layout/item_container_detail_prank_sound_0" android:layout_width="@dimen/_85sdp" android:layout_height="@dimen/_85sdp" android:layout_marginEnd="@dimen/_5sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/animItemDetail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="@dimen/_75sdp" android:layout_height="@dimen/_75sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginStart="@dimen/_5sdp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgBackgroundItem" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/backGroundItemDetail" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/imgItemDetailRcv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/_5sdp" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/_9ssp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/txtItemDetailRcv" android:paddingLeft="@dimen/_2sdp" android:paddingRight="@dimen/_2sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hair_clipper" android:maxLines="1" android:layout_weight="4.0" android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
